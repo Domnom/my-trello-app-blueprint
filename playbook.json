@@ -1,0 +1,219 @@
+{
+	"config": {
+		"cli": {
+			"use": "rastasheep/ubuntu-sshd:14.04",
+			"as": "@ubuntu",
+			"isDefault": true,
+			"// @description": "default - optional to switch between different environments"
+		}
+	},
+
+	"categories": [
+		{
+			"title": "Angular - Project Setup",
+			"icon" : "chrome",
+			"colour" : "rgba(187, 26, 26, 0.7)",
+			"scenes": [
+				{
+					"title": "Project 2 style - angular",
+					"steps":[
+						{
+							"title" : "Installing node",
+							"gitData" : {
+								"branch" : "master"
+							},
+							"windowSettings" : {
+								"description" : {
+									"isMin" : false,
+									"isMax" : false,
+									"isClosed" : true,
+									"top" : "10%",
+									"left" : "10%",
+									"width" : "10%",
+									"height" : "10%",
+									"transitions" : [
+										{
+											"start" : 1000,
+											"end" : 2000,
+											"width" : "50%",
+											"height" : "100%",
+											"bottom" : "0%",
+											"right" : "10%"
+										},
+										{
+											"start" : 3000,
+											"end" : 3500,
+											"width" : "100%",
+											"height" : "20%",
+											"bottom" : "0%",
+											"right" : "0%"
+										}
+									]
+								},
+								"code" : {
+									"isClosed" : false,
+									"width" : "100%",
+									"height" : "90%",
+									"top" : "10%",
+									"left" : "0px"
+								},
+								"terminal" : {
+									"isClosed" : true,
+									"width" : "40%",
+									"height" : "40%",
+									"top" : "5%",
+									"left" : "5%"
+								},
+								"browser" : {
+									"isClosed" : true,
+									"width" : "50%",
+									"height" : "50%",
+									"top" : "25%",
+									"left" : "25%"
+								}
+							},
+							"timeline" : [
+								{
+									"panel": "description", 
+									"start": 200,
+									"duration": 20000,
+									"description": [
+										{
+											"tag": "p", 
+											"txt": "First, let's setup some folders"
+										},
+										{
+											"tag": "ul",
+											"kids": [
+												{"tag": "li", "txt": "*Models* will represent our data"},
+												{"tag": "li", "txt": "*Services* will be used for business logic layer"},
+												{"tag": "li", "txt": "*Controllers* will be our router"}
+											]
+										},
+										{
+											"tag" : "h3",
+											"txt" : "h3 tag here"
+										},
+										{
+											"tag" : "h2",
+											"txt" : "h2 tag here"
+										},
+										{
+											"tag" : "h1",
+											"txt" : "h1 tag here"
+										}
+									]
+								},
+								{
+                                    "panel": "code", 
+                                    "start": 5000,
+                                    "duration": 24000,
+                                    "code": {
+                                        "template": "test1.hbs",
+                                        "template_data" : {
+											"className" : "AuthController",
+											"partial_1" : "{{partial_1}}",
+											"partial_2" : "{{partial_2}}"
+                                        },
+                                        "partial_sections" : [
+                                            {
+                                                "partial_id" : "partial_1",
+                                                "start" : 5000,
+                                                "duration" : 8000,
+                                                "template" : "test1_partials/partial_1.hbs",
+                                                "template_data" : {
+													"lodashVarName" : "_",
+													"cssPath" : "./css/index.css"
+                                                }
+                                            },
+                                            {
+                                                "partial_id" : "partial_2",
+                                                "start" : 9000,
+                                                "duration" : 5000,
+                                                "template" : "test1_partials/partial_2.hbs",
+                                                "template_data" : {
+                                                    "authUrlVariableName" : "authUrl"
+                                                }
+                                            }
+                                        ],
+                                        "output" : "random/folder/here/test1.js"
+                                    }
+                                }
+							]
+						}
+                    ]
+				},
+				{
+					"title": "This is scene 2",
+					"steps":[
+						{
+							"title" : "Scene 2 things",
+							"gitData" : {
+								"branch" : "master"
+							},
+							"windowSettings" : {
+								"description" : {
+									"isMin" : false,
+									"isMax" : false,
+									"isClosed" : true,
+									"top" : "10%",
+									"left" : "10%",
+									"width" : "10%",
+									"height" : "10%"
+								},
+								"code" : {
+									"isClosed" : false,
+									"width" : "100%",
+									"height" : "90%",
+									"top" : "10%",
+									"left" : "0px"
+								},
+								"terminal" : {
+									"isClosed" : true,
+									"width" : "40%",
+									"height" : "40%",
+									"top" : "5%",
+									"left" : "5%"
+								},
+								"browser" : {
+									"isClosed" : true,
+									"width" : "50%",
+									"height" : "50%",
+									"top" : "25%",
+									"left" : "25%"
+								}
+							},
+							"timeline" : [
+								{
+                                    "panel": "code", 
+                                    "start": 5000,
+                                    "duration": 24000,
+                                    "code": {
+                                        "template": "test2.hbs",
+                                        "template_data" : {
+											"className" : "Scene2",
+											"msgVariable" : "msg",
+											"partial_1" : "{{partial_1}}"
+                                        },
+                                        "partial_sections" : [
+                                            {
+                                                "partial_id" : "partial_1",
+                                                "start" : 5000,
+                                                "duration" : 8000,
+                                                "template" : "test2_partials/partial_1.hbs",
+                                                "template_data" : {
+													"msgVariable" : "msg"
+                                                }
+                                            }
+                                        ],
+                                        "output" : "tester2.js"
+                                    }
+                                }
+							]
+						}
+                    ]
+                }
+            ]
+        }
+    ]
+}
