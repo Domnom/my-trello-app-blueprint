@@ -27,7 +27,9 @@
 									"isMin" : false,
 									"isMax" : false,
 									"isClosed" : false,
-									"width" : "100%",
+									"top" : "90px",
+									"left" : "0px",
+									"width" : "60%",
 									"height" : "100%"
 								},
 								"code" : {
